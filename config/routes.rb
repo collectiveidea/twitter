@@ -1,4 +1,6 @@
 Twitter::Application.routes.draw do
+  get "users/show"
+
   resources :tweets
   
   root :to => 'tweets#index'
