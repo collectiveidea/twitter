@@ -22,3 +22,26 @@ Feature: A user can tweet
     And I should see "@bob"
     And I should see "Hi!"
     And I should see "@alice"
+    
+  Scenario: A user sees 10 tweets per page
+    Given the following tweets exist:
+      | body         | username |
+      | Is this on?  | oldman   |
+      | Hi!          | alice    |
+      | Hello world  | bob      |
+      | Hi!          | alice    |
+      | How are you? | bob      |
+      | I'm fine     | alice    |
+      | Really?      | bob      |
+      | Yes and you? | alice    |
+      | not too bad  | bob      |
+      | That's good  | alice    |
+      | Hello world  | bob      |
+      | Hi!          | alice    |
+    When I go to the home page
+    Then I should not see "@oldman"
+    And I should see "Next"
+    When I follow "Next"
+    Then I should see "@oldman"
+    And I should see "Is this on?"
+    
