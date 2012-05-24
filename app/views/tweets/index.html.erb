@@ -15,7 +15,7 @@
 <% end %>
 
 <% @tweets.each do |tweet| %>
-  <div>
+  <div class="tweet">
     <%= tweet.body %><br>
     @<%= tweet.username %>
     <%= time_ago_in_words tweet.created_at %> ago
