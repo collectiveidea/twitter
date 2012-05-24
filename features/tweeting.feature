@@ -10,4 +10,4 @@ Feature: A user can tweet
     And I press "Tweet"
     Then I should see "Hello World!"
     And I should see "danielmorrison"
-    And I should see "0 minutes ago"
+    And I should see "less than a minute ago"

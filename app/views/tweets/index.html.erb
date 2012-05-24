@@ -1,0 +1,23 @@
+<%= form_for @tweet do |form| %>
+  <p>
+    <%= form.label :body %><br>
+    <%= form.text_area :body, :rows => 3 %>
+  </p>
+  
+  <p>
+    <%= form.label :username %>
+    @<%= form.text_field :username %>
+  </p>
+  
+  <p>
+    <%= form.submit 'Tweet' %>
+  </p>
+<% end %>
+
+<% @tweets.each do |tweet| %>
+  <div>
+    <%= tweet.body %><br>
+    @<%= tweet.username %>
+    <%= time_ago_in_words tweet.created_at %> ago
+  </div>
+<% end %>

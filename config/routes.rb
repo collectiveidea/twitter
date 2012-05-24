@@ -1,5 +1,7 @@
 Twitter::Application.routes.draw do
   resources :tweets
+  
+  root :to => 'tweets#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
