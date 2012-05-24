@@ -25,6 +25,7 @@ gem 'jquery-rails'
 group :test do
   gem 'cucumber-rails-training-wheels'
   gem 'database_cleaner'
+  gem 'factory_girl_rails'
 end
 
 # To use ActiveModel has_secure_password
