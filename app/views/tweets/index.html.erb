@@ -21,3 +21,5 @@
     <%= time_ago_in_words tweet.created_at %> ago
   </div>
 <% end %>
+
+<%= paginate @tweets %>
