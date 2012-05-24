@@ -1,7 +1,8 @@
 Twitter::Application.routes.draw do
-  get "users/show"
-
   resources :tweets
+  match ":username" => 'users#show', :as => 'user'
+  #, :constraints => {:username => //}
+  
   
   root :to => 'tweets#index'
 

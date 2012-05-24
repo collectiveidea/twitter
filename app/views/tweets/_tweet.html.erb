@@ -1,0 +1,5 @@
+<div class="tweet">
+  <%= tweet.body %><br>
+  <%= link_to "@#{tweet.username}", user_path(tweet.username) %>
+  <%= time_ago_in_words tweet.created_at %> ago
+</div>

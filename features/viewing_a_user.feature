@@ -6,7 +6,7 @@ Feature: A user can view a user's tweets
   Scenario: Tweeting
     Given the following tweets exist:
       | body            | username |
-      | Hello world     | bob      |
+      | Hello World     | bob      |
       | Insightful info | bob      |
       | Hi!             | alice    |
     And I am on the home page
@@ -14,7 +14,8 @@ Feature: A user can view a user's tweets
     Then I should see "Hello World"
     And I should see "Insightful info"
     And I should not see "Hi!"
-    When I follow "@alice"
+    When I go to the home page
+    And I follow "@alice"
     Then I should see "Hi!"
-    Then I should not see "Hello World"
+    And I should not see "Hello World"
     And I should not see "Insightful info"
