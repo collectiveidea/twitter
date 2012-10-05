@@ -6,6 +6,14 @@ It has cucumber features to describe what it can do.
 
 It isn't meant to be great, it is meant to be quick & dirty.
 
+== Installation
+
+- <tt>git clone https://github.com/collectiveidea/twitter.git</tt>
+- <tt>cd twitter</tt>
+- <tt>bundle</tt>
+- <tt>rake db:migrate</tt>
+- <tt>rails server</tt>
+
 Maybe we'll then take on Twitter. What can go wrong?
 
 http://www.yiyinglu.com/failwhale/images/failwhale.gif
