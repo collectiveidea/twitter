@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.3'
+gem 'rails', '3.2.8'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -27,7 +27,7 @@ gem 'heroku'
 group :test do
   gem 'cucumber-rails-training-wheels'
   gem 'database_cleaner'
-  gem 'factory_girl_rails'
+  gem 'factory_girl_rails', '~> 3.3.0'
 end
 
 # To use ActiveModel has_secure_password
