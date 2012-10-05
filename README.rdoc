@@ -6,6 +6,8 @@ It has cucumber features to describe what it can do.
 
 It isn't meant to be great, it is meant to be quick & dirty.
 
+Viewable at: http://high-summer-2262.heroku.com
+
 == Installation
 
 - <tt>git clone git://github.com/collectiveidea/twitter.git</tt>
